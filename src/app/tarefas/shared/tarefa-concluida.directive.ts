@@ -9,7 +9,7 @@ export class TarefaConcluidaDirective implements OnInit {
   // deve ter o mesmo nome da diretiva
   @Input() tarefaConcluida: boolean;
 
-  constructor(private el: ElementRef) { }
+  constructor(private el?: ElementRef) { }
 
   ngOnInit(): void {
     if (this.tarefaConcluida) {
